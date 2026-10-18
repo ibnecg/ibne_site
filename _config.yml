@@ -4,7 +4,7 @@ subtitle: "Campo Grande / MS"
 tagline: "Um lugar de acolhimento, fé, amor e recomeços"
 description: "Site oficial da Igreja Batista Nova Esperança em Campo Grande, Mato Grosso do Sul. Conheça nossos cultos, ministérios, programação semanal e faça parte da nossa família de fé."
 url: "https://ibnecg.github.io" # Substitua pelo domínio oficial ou URL do repositório
-baseurl: "" # Deixe vazio se for no domínio raiz ou coloque /ibne_site caso seja um site de projeto sem domínio customizado
+baseurl: "/ibne_site" # Deixe vazio se for no domínio raiz ou coloque /ibne_site caso seja um site de projeto sem domínio customizado
 
 # Contato & Localização da Igreja
 church:
