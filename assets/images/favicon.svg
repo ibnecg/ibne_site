@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="favCross" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="favGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#favBg)" />
+  <!-- Radiant Arc -->
+  <path d="M 14,48 C 22,20 48,12 56,18 C 40,24 24,34 18,50 Z" fill="url(#favGlow)" opacity="0.9" />
+  <!-- Cross -->
+  <rect x="28" y="12" width="8" height="40" rx="4" fill="url(#favCross)" />
+  <rect x="16" y="24" width="32" height="8" rx="4" fill="url(#favCross)" />
+  <circle cx="32" cy="28" r="3" fill="#ffffff" />
+</svg>

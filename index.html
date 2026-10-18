@@ -1,0 +1,260 @@
+---
+layout: default
+title: "Início"
+---
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      <span>Igreja Batista Nova Esperança • Campo Grande / MS</span>
+    </div>
+
+    <h1 class="hero-title">
+      Um lugar de recomeços, fé e <span class="highlight">nova esperança</span> em Cristo.
+    </h1>
+
+    <p class="hero-lead">
+      Não importa onde você esteve ou o que viveu: aqui você encontra braços abertos, a Palavra viva de Deus e uma família acolhedora para caminhar ao seu lado.
+    </p>
+
+    <div class="hero-actions">
+      <a href="{{ '/programacao' | relative_url }}" class="btn btn-primary">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Horários dos Cultos
+      </a>
+      <a href="{{ '/contato' | relative_url }}" class="btn btn-outline-white">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        Planeje sua Visita
+      </a>
+      <a href="https://wa.me/{{ site.church.whatsapp }}?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20a%20Igreja%20Batista%20Nova%20Esperan%C3%A7a!" target="_blank" rel="noopener" class="btn btn-gold">
+        Fale Conosco no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Next Service Countdown Floating Widget -->
+{% include next_service.html %}
+
+<!-- Welcome / Quem Somos Section -->
+<section class="section" id="sobre-resumo">
+  <div class="container">
+    <div class="welcome-grid">
+      <div class="welcome-image-wrapper">
+        <img src="{{ '/assets/images/community.jpg' | relative_url }}" alt="Comunidade acolhedora da IBNE" class="welcome-img" />
+        <div class="welcome-floating-badge">
+          <div class="floating-badge-icon">🤝</div>
+          <div class="floating-badge-text">
+            <h4>Uma Família de Fé</h4>
+            <p>Acolhendo Campo Grande com amor</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome-text">
+        <span class="section-tag">Seja Bem-vindo</span>
+        <h2>Existe um lugar reservado para você e sua família.</h2>
+        <p>
+          A <strong>Igreja Batista Nova Esperança (IBNE)</strong> em Campo Grande/MS nasceu com o chamado de ser um farol da graça e da verdade de Jesus. Somos uma comunidade centrada na Bíblia Sagrada, onde cada pessoa é valorizada e incentivada a crescer espiritualmente.
+        </p>
+        <p>
+          Seja para o seu primeiro contato com o Evangelho ou para encontrar um lar espiritual para congregar, nós desejamos caminhar com você.
+        </p>
+
+        <ul class="features-list">
+          <li>
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <span><strong>Pregação Bíblica e Cristocêntrica:</strong> Mensagens práticas e fiéis às Escrituras.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <span><strong>Ministério Infantil Estruturado:</strong> Cuidado carinhoso e bíblico para seus filhos no <em>Esperança Kids</em>.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <span><strong>Comunhão Genuína:</strong> Grupos de conexão e amizades sinceras para a vida toda.</span>
+          </li>
+        </ul>
+
+        <div>
+          <a href="{{ '/sobre' | relative_url }}" class="btn btn-outline-primary">
+            Conheça Nossa História e Valores →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Schedule Section -->
+<section class="section section-muted" id="cultos">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Agenda Semanal</span>
+      <h2 class="section-title">Nossos Cultos e Reuniões</h2>
+      <p class="section-subtitle">
+        Venha celebrar, orar e aprender com a nossa comunidade. Nossas portas estão sempre abertas para você!
+      </p>
+    </div>
+
+    <div class="schedule-grid">
+      {% for service in site.data.schedule.services %}
+        <div class="schedule-card {% if service.featured %}featured{% endif %}">
+          <div class="schedule-card-top">
+            <span class="schedule-day-badge">{{ service.day }}</span>
+            <span class="schedule-time">{{ service.time }}</span>
+          </div>
+          <h3 class="schedule-title">{{ service.title }}</h3>
+          <p class="schedule-desc">{{ service.description }}</p>
+          <div style="margin-top: 1.25rem;">
+            <span class="service-badge-pill">{{ service.badge }}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="{{ '/programacao' | relative_url }}" class="btn btn-primary">
+        Ver Programação Completa e Detalhes
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Ministries Highlights -->
+<section class="section" id="ministerios">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Igreja em Ação</span>
+      <h2 class="section-title">Ministérios para Toda a Família</h2>
+      <p class="section-subtitle">
+        Descubra onde servir e encontre um grupo de pessoas na mesma fase da vida para caminhar com você.
+      </p>
+    </div>
+
+    <div class="ministries-grid">
+      {% for min in site.data.ministries limit:3 %}
+        <div class="ministry-card">
+          <div class="ministry-img-box">
+            <img src="{{ min.image | relative_url }}" alt="{{ min.name }}" />
+            <span class="ministry-badge">{{ min.subtitle }}</span>
+          </div>
+          <div class="ministry-body">
+            <h3 class="ministry-title">{{ min.name }}</h3>
+            <div class="ministry-subtitle">{{ min.leader }}</div>
+            <p class="ministry-desc">{{ min.description }}</p>
+            <div class="ministry-verse">“{{ min.verse }}”</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="{{ '/ministerios' | relative_url }}" class="btn btn-outline-primary">
+        Ver Todos os Nossos Ministérios →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Dízimos e Ofertas Section -->
+<section class="section">
+  <div class="container">
+    <div class="giving-card">
+      <div class="giving-content">
+        <span class="section-tag" style="color: var(--accent-gold);">Adoração Através da Generosidade</span>
+        <h2>Dízimos e Ofertas</h2>
+        <p>
+          Contribuir com a obra de Deus é um ato de adoração, gratidão e fidelidade. Suas contribuições sustentam o templo, os cultos, a assistência às famílias necessitadas e a expansão do Reino de Deus em Campo Grande e no mundo.
+        </p>
+        <p style="font-size: 0.95rem; font-style: italic; color: #94a3b8;">
+          “Cada um contribua segundo propôs no seu coração; não com tristeza, ou por necessidade; porque Deus ama ao que dá com alegria.” — 2 Coríntios 9:7
+        </p>
+        <div style="margin-top: 1.5rem;">
+          <a href="{{ '/dizimos-ofertas' | relative_url }}" class="btn btn-outline-white">
+            Saiba Mais Sobre Nossas Contribuições
+          </a>
+        </div>
+      </div>
+
+      <div class="pix-box">
+        <div class="pix-label">Chave PIX da Igreja</div>
+        <div class="pix-key-display" id="homePixKey">{{ site.church.pix_key }}</div>
+        <button class="btn btn-gold btn-copy-pix" data-pix="{{ site.church.pix_key }}">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          Copiar Chave PIX
+        </button>
+        <div class="pix-info">
+          {{ site.church.pix_name }} • {{ site.church.pix_bank }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Location & Contact Summary -->
+<section class="section section-muted" id="visita">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <span class="section-tag">Onde Estamos</span>
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.75rem;">
+          Venha nos fazer uma visita!
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1rem;">
+          Nossa igreja está de braços abertos para receber você e sua família. Temos estacionamento, ambiente climatizado e recepcionistas prontos para lhe acolher.
+        </p>
+
+        <div class="contact-info-list">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Endereço</h4>
+              <p>{{ site.church.address }}</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Telefone & WhatsApp</h4>
+              <p><a href="https://wa.me/{{ site.church.whatsapp }}" target="_blank" rel="noopener">{{ site.church.phone }}</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div class="contact-details">
+              <h4>E-mail</h4>
+              <p><a href="mailto:{{ site.church.email }}">{{ site.church.email }}</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <a href="{{ '/contato' | relative_url }}" class="btn btn-primary">
+            Ver Mapa Detalhado e Enviar Mensagem
+          </a>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <!-- Mapa embed interativo de Campo Grande/MS -->
+        <iframe 
+          title="Localização da Igreja Batista Nova Esperança" 
+          src="https://maps.google.com/maps?q=Campo%20Grande%20MS&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>

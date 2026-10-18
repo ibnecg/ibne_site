@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="page-hero">
+    <div class="container container-narrow">
+      <div class="page-hero-tag">Notícias & Mensagens</div>
+      <h1 class="page-hero-title">{{ page.title }}</h1>
+      <p class="page-hero-lead">
+        Publicado em {{ page.date | date: "%d/%m/%Y" }} por {{ page.author | default: site.title }}
+      </p>
+    </div>
+  </header>
+
+  <div class="section">
+    <div class="container container-narrow" style="background: var(--bg-surface); padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--border-light);">
+      <div class="post-content" style="font-size: 1.1rem; line-height: 1.8;">
+        {{ content }}
+      </div>
+
+      <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center;">
+        <a href="{{ '/' | relative_url }}" class="btn btn-outline-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">
+          ← Voltar para o Início
+        </a>
+        <a href="{{ '/programacao' | relative_url }}" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">
+          Conheça Nossos Cultos
+        </a>
+      </div>
+    </div>
+  </div>
+</article>

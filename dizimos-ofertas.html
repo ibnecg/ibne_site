@@ -1,0 +1,84 @@
+---
+layout: page
+title: "Dízimos & Ofertas"
+tag: "Generosidade e Adoração"
+lead: "Suas contribuições apoiam o sustento da igreja local, o socorro aos necessitados e o avanço da pregação do Evangelho."
+narrow: true
+---
+
+<!-- PIX Card Principal -->
+<div style="background: linear-gradient(135deg, var(--primary-dark) 0%, #1e293b 100%); color: var(--text-white); padding: 3rem 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); text-align: center; margin-bottom: 4rem;">
+  <span class="service-badge-pill" style="margin-bottom: 1rem;">Transferência Instantânea</span>
+  <h2 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem;">
+    Contribua via PIX
+  </h2>
+  <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 550px; margin: 0 auto 2rem;">
+    Utilize a chave PIX abaixo através do aplicativo do seu banco:
+  </p>
+
+  <div style="max-width: 480px; margin: 0 auto; background: rgba(0, 0, 0, 0.4); border: 2px dashed rgba(56, 189, 248, 0.4); padding: 1.5rem; border-radius: var(--radius-md);">
+    <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-gold-light); letter-spacing: 1px; font-weight: 700; margin-bottom: 0.5rem;">
+      Chave PIX (E-mail / CNPJ)
+    </div>
+    <div style="font-family: monospace; font-size: 1.35rem; font-weight: bold; color: #ffffff; margin-bottom: 1.25rem; word-break: break-all;">
+      {{ site.church.pix_key }}
+    </div>
+
+    <button class="btn btn-gold btn-copy-pix" data-pix="{{ site.church.pix_key }}" style="width: 100%; padding: 0.85rem;">
+      <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+      Copiar Chave PIX
+    </button>
+  </div>
+
+  <div style="margin-top: 1.5rem; font-size: 0.9rem; color: #94a3b8; display: flex; flex-direction: column; gap: 0.25rem;">
+    <span><strong>Favorecido:</strong> {{ site.church.pix_name }}</span>
+    <span><strong>Instituição:</strong> {{ site.church.pix_bank }}</span>
+  </div>
+</div>
+
+<!-- Onde Suas Contribuições São Investidas -->
+<div style="margin-bottom: 4rem;">
+  <h3 style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 1.5rem; text-align: center;">
+    Como Suas Contribuições São Empregadas
+  </h3>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+    <div style="background: var(--bg-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏛️</div>
+      <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.35rem;">Estrutura do Templo</h4>
+      <p style="font-size: 0.875rem; color: var(--text-muted);">Manutenção de salas, climatização, limpeza, iluminação e recursos audiovisuais para os cultos.</p>
+    </div>
+
+    <div style="background: var(--bg-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🍲</div>
+      <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.35rem;">Ação Social</h4>
+      <p style="font-size: 0.875rem; color: var(--text-muted);">Cestas básicas, roupas e assistência a famílias em vulnerabilidade em Campo Grande.</p>
+    </div>
+
+    <div style="background: var(--bg-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌍</div>
+      <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.35rem;">Missões & Evangelismo</h4>
+      <p style="font-size: 0.875rem; color: var(--text-muted);">Sustento de missionários no campo e realização de projetos evangelísticos.</p>
+    </div>
+
+    <div style="background: var(--bg-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎨</div>
+      <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.35rem;">Esperança Kids</h4>
+      <p style="font-size: 0.875rem; color: var(--text-muted);">Materiais didáticos, lanches, segurança e recursos bíblicos pedagógicos para nossas crianças.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Fundamento Bíblico da Contribuição -->
+<div style="background: var(--bg-subtle); padding: 2.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+  <h3 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 1rem;">
+    Princípios Bíblicos da Generosidade
+  </h3>
+  <blockquote style="font-style: italic; color: var(--text-muted); border-left: 4px solid var(--accent-gold); padding-left: 1rem; margin-bottom: 1.5rem;">
+    “Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o SENHOR dos Exércitos, se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.”
+    <br><strong style="font-style: normal; color: var(--text-main);">— Malaquias 3:10</strong>
+  </blockquote>
+  <p style="font-size: 0.95rem; color: var(--text-muted);">
+    O dízimo e a oferta não são uma cobrança ou taxa, mas um privilégio bíblico no qual reconhecemos com alegria que Deus é o Criador e Mantenedor de todas as coisas.
+  </p>
+</div>

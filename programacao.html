@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Cultos & Programação"
+tag: "Agenda Semanal"
+lead: "Confira todos os dias e horários dos nossos cultos e atividades em Campo Grande/MS. Todos são muito bem-vindos!"
+---
+
+<div class="schedule-grid">
+  {% for service in site.data.schedule.services %}
+    <div class="schedule-card {% if service.featured %}featured{% endif %}">
+      <div class="schedule-card-top">
+        <span class="schedule-day-badge">{{ service.day }}</span>
+        <span class="schedule-time">{{ service.time }}</span>
+      </div>
+      <h3 class="schedule-title">{{ service.title }}</h3>
+      <p class="schedule-desc">{{ service.description }}</p>
+      
+      <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center;">
+        <span class="service-badge-pill">{{ service.badge }}</span>
+        <a href="{{ '/contato' | relative_url }}" style="font-size: 0.85rem; font-weight: 700; color: var(--accent-sky);">
+          Como Chegar →
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Dúvidas Comuns para Visitantes (FAQ) -->
+<div style="margin-top: 5rem;">
+  <div class="section-header">
+    <span class="section-tag">Primeira Vez Conosco?</span>
+    <h2 class="section-title">Perguntas Frequentes de Visitantes</h2>
+    <p class="section-subtitle">Tudo o que você precisa saber antes de nos visitar pela primeira vez.</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+    <div style="background: var(--bg-surface); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+      <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">
+        👔 Que tipo de roupa devo vestir?
+      </h4>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">
+        Venha com a roupa com a qual você se sinta confortável! Não exigimos vestimenta formal ou terno. Em nossa igreja, você verá pessoas de jeans e camiseta, bem como trajes casuais.
+      </p>
+    </div>
+
+    <div style="background: var(--bg-surface); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+      <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">
+        👶 Tem espaço para meus filhos pequenos?
+      </h4>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">
+        Sim! Dispomos do <strong>Esperança Kids</strong> com salas climatizadas, berçário e professoras qualificadas durante os cultos de celebração de domingo para que seus filhos aprendam a Palavra de forma alegre e segura.
+      </p>
+    </div>
+
+    <div style="background: var(--bg-surface); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+      <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">
+        🚗 Como funciona o estacionamento?
+      </h4>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">
+        A igreja conta com fácil acesso para estacionamento no entorno e equipe voluntária de acolhimento pronta para orientar a sua chegada.
+      </p>
+    </div>
+
+    <div style="background: var(--bg-surface); padding: 1.75rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+      <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">
+        💰 Preciso contribuir na primeira visita?
+      </h4>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">
+        De forma alguma! Nossos visitantes são nossos convidados de honra. A contribuição com dízimos e ofertas é uma prática espontânea dos membros regulares.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 4rem; text-align: center;">
+  <a href="https://wa.me/{{ site.church.whatsapp }}?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20os%20cultos%20da%20IBNE!" target="_blank" rel="noopener" class="btn btn-gold">
+    Tirar Dúvida no WhatsApp da Igreja
+  </a>
+</div>

@@ -1,0 +1,49 @@
+# Informações Gerais da Igreja
+title: "Igreja Batista Nova Esperança"
+subtitle: "Campo Grande / MS"
+tagline: "Um lugar de acolhimento, fé, amor e recomeços"
+description: "Site oficial da Igreja Batista Nova Esperança em Campo Grande, Mato Grosso do Sul. Conheça nossos cultos, ministérios, programação semanal e faça parte da nossa família de fé."
+url: "https://ibnecg.github.io" # Substitua pelo domínio oficial ou URL do repositório
+baseurl: "" # Deixe vazio se for no domínio raiz ou coloque /ibne_site caso seja um site de projeto sem domínio customizado
+
+# Contato & Localização da Igreja
+church:
+  name: "Igreja Batista Nova Esperança"
+  acronym: "IBNE"
+  city: "Campo Grande"
+  state: "MS"
+  address: "Campo Grande, MS" # Atualizar com endereço completo da igreja
+  maps_link: "https://maps.google.com/?q=Campo+Grande+MS"
+  phone: "(67) 99999-9999"
+  whatsapp: "5567999999999"
+  email: "contato@ibnecg.com.br"
+  pix_key: "contato@ibnecg.com.br"
+  pix_name: "Igreja Batista Nova Esperança"
+  pix_bank: "Banco do Brasil"
+  social:
+    instagram: "https://instagram.com/ibnecg"
+    youtube: "https://youtube.com/@ibnecg"
+    facebook: "https://facebook.com/ibnecg"
+
+# Configurações do Jekyll
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+timezone: America/Campo_Grande
+lang: pt-BR
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Arquivos e pastas excluídos do build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - AGENTS.md
+  - Agents.md
+  - vendor/
+  - .git/
+  - .github/
+  - node_modules/

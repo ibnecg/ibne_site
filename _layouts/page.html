@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section class="page-hero">
+  <div class="container">
+    {% if page.tag %}
+      <div class="page-hero-tag">{{ page.tag }}</div>
+    {% endif %}
+    <h1 class="page-hero-title">{{ page.title }}</h1>
+    {% if page.lead %}
+      <p class="page-hero-lead">{{ page.lead }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<div class="section">
+  <div class="container {% if page.narrow %}container-narrow{% endif %}">
+    {{ content }}
+  </div>
+</div>

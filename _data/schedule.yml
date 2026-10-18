@@ -1,0 +1,46 @@
+services:
+  - day: "Domingo"
+    time: "09:00"
+    title: "Escola Bíblica Dominical (EBD)"
+    description: "Crescimento espiritual, discipulado bíblico e classes para todas as idades (crianças, jovens e adultos)."
+    badge: "Ensino & Discipulado"
+    featured: false
+    day_number: 0 # 0 = Domingo no JS
+    hour: 9
+    minute: 0
+  - day: "Domingo"
+    time: "19:00"
+    title: "Culto de Celebração da Família"
+    description: "Momento principal de louvor coletivo, adoração genuína, comunhão e pregação expositiva da Palavra de Deus. Conta com sala para bebês e ministério infantil Esperança Kids."
+    badge: "Culto Principal"
+    featured: true
+    day_number: 0
+    hour: 19
+    minute: 0
+  - day: "Terça-feira"
+    time: "19:30"
+    title: "Reunião de Oração & Intercessão"
+    description: "Tempo dedicado a buscar a Deus de joelhos, interceder pela igreja, pelas famílias, pelos enfermos e pela cidade de Campo Grande."
+    badge: "Oração"
+    featured: false
+    day_number: 2
+    hour: 19
+    minute: 30
+  - day: "Quinta-feira"
+    time: "19:30"
+    title: "Estudo Bíblico & Pequenos Grupos"
+    description: "Comunhão nos lares e no templo, aprofundando o conhecimento das Escrituras e compartilhando a vida em comunidade."
+    badge: "Comunhão"
+    featured: false
+    day_number: 4
+    hour: 19
+    minute: 30
+  - day: "Sábado"
+    time: "19:30"
+    title: "Culto da Juventude (JNE)"
+    description: "Encontro dinâmico para adolescentes, jovens e universitários com adoração vibrante, bate-papo relevante e comunhão."
+    badge: "Jovens & Teens"
+    featured: false
+    day_number: 6
+    hour: 19
+    minute: 30

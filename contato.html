@@ -1,0 +1,77 @@
+---
+layout: page
+title: "Contato & Como Chegar"
+tag: "Fale Conosco"
+lead: "Estamos à disposição para receber você, orar por suas necessidades ou tirar qualquer dúvida sobre a nossa igreja."
+---
+
+<div class="contact-grid" id="localizacao">
+  <!-- Informações de Contato & Redes -->
+  <div class="contact-info-card">
+    <span class="section-tag">Canais de Atendimento</span>
+    <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.75rem;">
+      Fale com Nossa Equipe
+    </h2>
+    <p style="color: var(--text-muted); font-size: 0.95rem;">
+      Será um prazer imenso falar com você. Escolha o canal de sua preferência ou envie uma mensagem direta pelo formulário.
+    </p>
+
+    <div class="contact-info-list">
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="contact-details">
+          <h4>Endereço do Templo</h4>
+          <p>{{ site.church.address }}</p>
+          <a href="{{ site.church.maps_link }}" target="_blank" rel="noopener" style="font-size: 0.85rem; font-weight: 700; color: var(--accent-sky);">
+            Abrir no Google Maps →
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </div>
+        <div class="contact-details">
+          <h4>WhatsApp & Telefone</h4>
+          <p><a href="https://wa.me/{{ site.church.whatsapp }}" target="_blank" rel="noopener">{{ site.church.phone }}</a></p>
+          <span style="font-size: 0.8rem; color: #94a3b8;">Atendimento de terça a domingo</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div class="contact-details">
+          <h4>E-mail</h4>
+          <p><a href="mailto:{{ site.church.email }}">{{ site.church.email }}</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pedido de Oração / Mensagem via WhatsApp -->
+    <div style="margin-top: 2.5rem; background: var(--bg-subtle); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+      <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">
+        Precisa de Oração?
+      </h4>
+      <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Nossa equipe de intercessores ora diariamente pelos motivos enviados. Envie seu pedido confidencial agora mesmo.
+      </p>
+      <a href="https://wa.me/{{ site.church.whatsapp }}?text=Ol%C3%A1%2C%20gostaria%20de%20deixar%20um%20pedido%20de%20ora%C3%A7%C3%A3o%20para%20a%20equipe%20da%20IBNE." target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
+        Enviar Pedido de Oração no WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Mapa -->
+  <div class="map-container">
+    <iframe 
+      title="Mapa da Igreja Batista Nova Esperança em Campo Grande" 
+      src="https://maps.google.com/maps?q=Campo%20Grande%20MS&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
