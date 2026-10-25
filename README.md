@@ -51,7 +51,7 @@ ibne_site/
 ├── index.html                  # Página Inicial (Home)
 ├── sobre.html                  # Quem Somos, História, Visão e O que Cremos
 ├── programacao.html            # Cultos, horários detalhados e FAQ de visitantes
-├── ministerios.html            # Esperança Kids, Jovens, Louvor, Mulheres, Homens, Missões
+├── ministerios.html            # MINE (Ministério Infantil), Jovens, Louvor, Mulheres, Homens, Missões
 ├── dizimos-ofertas.html        # Instruções de contribuição e chave PIX
 ├── contato.html                # Endereço em Campo Grande, WhatsApp, mapa e oração
 ├── 404.html                    # Página de erro 404 personalizada

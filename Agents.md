@@ -66,7 +66,6 @@ ibne_site/
 ├── dizimos-ofertas.html      # Página de Dízimos e Ofertas (PIX)
 ├── contato.html              # Canais de atendimento e mapa
 ├── 404.html                  # Página de erro customizada
-├── DESIGN.md                 # Documentação oficial do Design System ("Raízes & Esperança")
 ├── AGENTS.md                 # Este documento de referência
 └── README.md                 # Documentação geral do projeto
 ```
@@ -85,14 +84,10 @@ ibne_site/
    - Todo link interno para páginas, imagens ou assets no HTML/Markdown **DEVE** utilizar o filtro Jekyll `relative_url` (exemplo: `{{ '/assets/images/logo.svg' | relative_url }}` ou `{{ '/sobre' | relative_url }}`).
    - Isso garante funcionamento correto tanto em domínio próprio (`ibnecg.com.br`) quanto em subpastas de projeto (`usuario.github.io/ibne_site/`).
 
-3. **Design & Estilo (Consulte `DESIGN.md`):**
+3. **Design & Estilo:**
    - **Proibido o uso de TailwindCSS**, a menos que explicitamente solicitado pelo usuário.
-   - **Proibido o uso de estilos inline (`style="..."`) ou cores hardcoded** nos templates HTML; utilize sempre as classes de componentes e tokens de `:root` definidos em `assets/css/style.css` e documentados em `DESIGN.md`.
-   - Paleta alinhada ao logo da IBNE (Cruz florescente):
-     - Laranja Vibrante (`#ed6c05` — `--brand-orange`) para CTAs principais e destaques.
-     - Verdes Botânicos (`#008036` — `--brand-forest` e `#70b62b` — `--brand-lime`) para acentos secundários, badges e indicadores de vida/crescimento.
-     - Marrom Madeira (`#884322` — `--brand-brown`) e Amarelo Sol (`#ffed00` — `--brand-yellow`) para detalhes complementares.
-     - Carvão/Expresso Quente (`#1c1917` — `--primary-dark` e `#262320` — `--text-main`) sobre fundos orgânicos claros (`#faf8f5` — `--bg-main` e `#f3efe9` — `--bg-subtle`).
+   - Utilize a paleta e variáveis CSS de `:root` presentes em `assets/css/style.css`.
+   - Cores primárias: Azul marinho profundo (`#0f2647`), Azul Céu (`#0ea5e9`), Dourado/Âmbar (`#f59e0b`).
    - Mantenha sempre suporte a dispositivos móveis (design mobile-first / responsivo).
 
 4. **Imagens e Assets:**

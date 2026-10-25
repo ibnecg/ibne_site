@@ -12,7 +12,7 @@ services:
     time: "18:00"
     time_alt: "*No último domingo: 10:00"
     title: "Culto de Celebração da Família"
-    description: "Momento principal de louvor coletivo, adoração genuína, comunhão e pregação expositiva da Palavra de Deus. Conta com sala para bebês e ministério infantil Esperança Kids."
+    description: "Momento principal de louvor coletivo, adoração genuína, comunhão e pregação expositiva da Palavra de Deus. Conta com sala para bebês e ministério infantil MINE (Ministério Infantil Nova Esperança)."
     custom_note: "Atenção ao horário: Nossos cultos acontecem aos domingos às 18:00, exceto no último domingo do mês, quando nosso culto é às 10:00."
     footer_note: "Último domingo às 10:00"
     badge: "Culto Principal"
