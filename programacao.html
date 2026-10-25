@@ -10,10 +10,24 @@ lead: "Confira todos os dias e horários dos nossos cultos e atividades em Campo
     <div class="schedule-card {% if service.featured %}featured{% endif %}">
       <div class="schedule-card-top">
         <span class="schedule-day-badge">{{ service.day }}</span>
-        <span class="schedule-time">{{ service.time }}</span>
+        <div class="schedule-time-wrapper">
+          <span class="schedule-time">{{ service.time }}</span>
+          {% if service.time_alt %}
+            <span class="schedule-time-alt">{{ service.time_alt }}</span>
+          {% endif %}
+        </div>
       </div>
       <h3 class="schedule-title">{{ service.title }}</h3>
       <p class="schedule-desc">{{ service.description }}</p>
+
+      {% if service.custom_note %}
+        <div class="schedule-custom-note">
+          <svg class="schedule-note-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span>{{ service.custom_note }}</span>
+        </div>
+      {% endif %}
 
       <div class="schedule-card-footer">
         <span class="service-badge-pill">{{ service.badge }}</span>
@@ -34,6 +48,13 @@ lead: "Confira todos os dias e horários dos nossos cultos e atividades em Campo
   </div>
 
   <div class="faq-grid">
+    <div class="faq-card">
+      <h4>⏰ Qual é o horário dos cultos de domingo?</h4>
+      <p>
+        A Escola Bíblica Dominical (EBD) acontece todos os domingos às 09:00. Nosso <strong>Culto de Celebração da Família</strong> é realizado aos domingos às <strong>18:00</strong> — com exceção do <strong>último domingo do mês</strong>, quando celebramos em horário especial matutino às <strong>10:00</strong>.
+      </p>
+    </div>
+
     <div class="faq-card">
       <h4>👔 Que tipo de roupa devo vestir?</h4>
       <p>
