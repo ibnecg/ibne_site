@@ -12,8 +12,9 @@ church:
   acronym: "IBNE"
   city: "Campo Grande"
   state: "MS"
-  address: "Avenida Tiradentes, 2734 - Jardim Anahy - Campo Grande, MS" # Atualizar com endereço completo da igreja
-  maps_link: "https://maps.app.goo.gl/d6ULDYCvvVXV3Ne5A"
+  address: "Avenida Tiradentes, 2734 - Vila Anahy - Campo Grande/MS"
+  maps_link: "https://www.google.com/maps/search/?api=1&query=Avenida+Tiradentes%2C+2734+-+Vila+Anahy%2C+Campo+Grande+-+MS"
+  maps_embed: "https://maps.google.com/maps?q=Avenida+Tiradentes,+2734+-+Vila+Anahy,+Campo+Grande+-+MS&t=&z=16&ie=UTF8&iwloc=&output=embed"
   phone: "(67) 99999-9999"
   whatsapp: "5567999999999"
   email: "contato@ibnecg.com.br"
