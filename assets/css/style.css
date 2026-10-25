@@ -1055,6 +1055,22 @@ img {
   transition: transform 0.5s ease;
 }
 
+.ministry-img-box.contain-fit {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem 2rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ministry-img-box.contain-fit img {
+  object-fit: contain;
+  width: auto;
+  max-width: 82%;
+  max-height: 82%;
+}
+
 .ministry-card:hover .ministry-img-box img {
   transform: scale(1.05);
 }
