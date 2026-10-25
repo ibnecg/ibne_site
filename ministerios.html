@@ -17,15 +17,10 @@ lead: "Cada ministério da IBNE existe para conectar pessoas a Deus, edificar re
         <div class="ministry-subtitle">Responsável: {{ min.leader }}</div>
         <p class="ministry-desc">{{ min.description }}</p>
 
-        <h5 style="font-family: var(--font-heading); font-size: 0.85rem; font-weight: 700; color: var(--primary); text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.5px;">
-          O que realizamos:
-        </h5>
-        <ul style="list-style: none; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.35rem;">
+        <h4 class="ministry-activities-title">O que realizamos:</h4>
+        <ul class="ministry-activities-list">
           {% for act in min.activities %}
-            <li style="font-size: 0.875rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
-              <span style="color: var(--accent-sky); font-weight: bold;">•</span>
-              {{ act }}
-            </li>
+            <li>{{ act }}</li>
           {% endfor %}
         </ul>
 
@@ -36,15 +31,13 @@ lead: "Cada ministério da IBNE existe para conectar pessoas a Deus, edificar re
 </div>
 
 <!-- CTA para Novos Voluntários -->
-<div style="margin-top: 5rem; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--text-white); padding: 3.5rem 2rem; border-radius: var(--radius-lg); text-align: center;">
-  <span class="section-tag" style="color: var(--accent-gold);">Seja Voluntário</span>
-  <h2 style="font-family: var(--font-heading); font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem;">
-    Descubra o seu chamado e sirva com alegria!
-  </h2>
-  <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 650px; margin: 0 auto 2rem;">
+<div class="cta-banner-dark mt-xl">
+  <span class="section-tag section-tag-light">Seja Voluntário</span>
+  <h2>Descubra o seu chamado e sirva com alegria!</h2>
+  <p>
     Deus presenteou você com talentos únicos para abençoar vidas. Venha fazer parte de uma de nossas equipes voluntárias e experimente o poder do serviço cristão.
   </p>
-  <a href="https://wa.me/{{ site.church.whatsapp }}?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20como%20servir%20nos%20minist%C3%A9rios%20da%20IBNE!" target="_blank" rel="noopener" class="btn btn-gold">
+  <a href="https://wa.me/{{ site.church.whatsapp }}?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20como%20servir%20nos%20minist%C3%A9rios%20da%20IBNE!" target="_blank" rel="noopener" class="btn btn-primary">
     Quero Servir em um Ministério
   </a>
 </div>

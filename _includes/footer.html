@@ -4,7 +4,7 @@
       <!-- Coluna 1: Sobre & Redes -->
       <div class="footer-brand">
         <a href="{{ '/' | relative_url }}">
-          <img src="{{ '/assets/images/logo-white.svg' | relative_url }}" alt="Logo IBNE" style="height: 48px; width: auto;" />
+          <img src="{{ '/assets/images/logo-white.svg' | relative_url }}" alt="Logo IBNE" class="footer-logo" />
         </a>
         <p>
           A Igreja Batista Nova Esperança é uma comunidade cristã comprometida com o Evangelho da graça de Cristo, o amor ao próximo, a comunhão e a esperança em Campo Grande, MS.
@@ -58,14 +58,14 @@
       <!-- Coluna 4: Contato & Dízimos -->
       <div class="footer-col">
         <h4>Onde Estamos</h4>
-        <p style="font-size: 0.9rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+        <p class="footer-church-name">
           {{ site.church.name }}
         </p>
-        <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 1rem;">
+        <p class="footer-church-location">
           {{ site.church.city }} - {{ site.church.state }}
         </p>
-        <div style="margin-top: 1rem;">
-          <a href="{{ '/dizimos-ofertas' | relative_url }}" class="btn btn-gold" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+        <div class="mt-sm">
+          <a href="{{ '/dizimos-ofertas' | relative_url }}" class="btn btn-primary btn-sm">
             Dízimos e Ofertas (PIX)
           </a>
         </div>
