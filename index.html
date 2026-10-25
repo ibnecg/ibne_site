@@ -6,7 +6,7 @@ title: "Início"
 <!-- Hero Section -->
 <section class="hero">
   <div class="hero-glow"></div>
-  <div class="container" style="position: relative; z-index: 2;">
+  <div class="container hero-content">
     <div class="hero-badge">
       <span class="hero-badge-dot"></span>
       <span>Igreja Batista Nova Esperança • Campo Grande / MS</span>
@@ -29,7 +29,7 @@ title: "Início"
         <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         Planeje sua Visita
       </a>
-      <a href="https://wa.me/{{ site.church.whatsapp }}?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20a%20Igreja%20Batista%20Nova%20Esperan%C3%A7a!" target="_blank" rel="noopener" class="btn btn-gold">
+      <a href="https://wa.me/{{ site.church.whatsapp }}?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20a%20Igreja%20Batista%20Nova%20Esperan%C3%A7a!" target="_blank" rel="noopener" class="btn btn-green">
         Fale Conosco no WhatsApp
       </a>
     </div>
@@ -109,14 +109,14 @@ title: "Início"
           </div>
           <h3 class="schedule-title">{{ service.title }}</h3>
           <p class="schedule-desc">{{ service.description }}</p>
-          <div style="margin-top: 1.25rem;">
+          <div class="mt-sm">
             <span class="service-badge-pill">{{ service.badge }}</span>
           </div>
         </div>
       {% endfor %}
     </div>
 
-    <div style="text-align: center; margin-top: 3rem;">
+    <div class="section-actions">
       <a href="{{ '/programacao' | relative_url }}" class="btn btn-primary">
         Ver Programação Completa e Detalhes
       </a>
@@ -152,7 +152,7 @@ title: "Início"
       {% endfor %}
     </div>
 
-    <div style="text-align: center; margin-top: 3rem;">
+    <div class="section-actions">
       <a href="{{ '/ministerios' | relative_url }}" class="btn btn-outline-primary">
         Ver Todos os Nossos Ministérios →
       </a>
@@ -165,15 +165,15 @@ title: "Início"
   <div class="container">
     <div class="giving-card">
       <div class="giving-content">
-        <span class="section-tag" style="color: var(--accent-gold);">Adoração Através da Generosidade</span>
+        <span class="section-tag section-tag-light">Adoração Através da Generosidade</span>
         <h2>Dízimos e Ofertas</h2>
         <p>
           Contribuir com a obra de Deus é um ato de adoração, gratidão e fidelidade. Suas contribuições sustentam o templo, os cultos, a assistência às famílias necessitadas e a expansão do Reino de Deus em Campo Grande e no mundo.
         </p>
-        <p style="font-size: 0.95rem; font-style: italic; color: #94a3b8;">
+        <p class="giving-quote">
           “Cada um contribua segundo propôs no seu coração; não com tristeza, ou por necessidade; porque Deus ama ao que dá com alegria.” — 2 Coríntios 9:7
         </p>
-        <div style="margin-top: 1.5rem;">
+        <div class="mt-md">
           <a href="{{ '/dizimos-ofertas' | relative_url }}" class="btn btn-outline-white">
             Saiba Mais Sobre Nossas Contribuições
           </a>
@@ -183,7 +183,7 @@ title: "Início"
       <div class="pix-box">
         <div class="pix-label">Chave PIX da Igreja</div>
         <div class="pix-key-display" id="homePixKey">{{ site.church.pix_key }}</div>
-        <button class="btn btn-gold btn-copy-pix" data-pix="{{ site.church.pix_key }}">
+        <button class="btn btn-primary btn-block btn-copy-pix" data-pix="{{ site.church.pix_key }}">
           <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
           Copiar Chave PIX
         </button>
@@ -201,10 +201,10 @@ title: "Início"
     <div class="contact-grid">
       <div class="contact-info-card">
         <span class="section-tag">Onde Estamos</span>
-        <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.75rem;">
+        <h2 class="heading-lg">
           Venha nos fazer uma visita!
         </h2>
-        <p style="color: var(--text-muted); font-size: 1rem;">
+        <p class="text-lead">
           Nossa igreja está de braços abertos para receber você e sua família. Temos estacionamento, ambiente climatizado e recepcionistas prontos para lhe acolher.
         </p>
 
@@ -240,7 +240,7 @@ title: "Início"
           </div>
         </div>
 
-        <div style="margin-top: 2rem;">
+        <div class="mt-lg">
           <a href="{{ '/contato' | relative_url }}" class="btn btn-primary">
             Ver Mapa Detalhado e Enviar Mensagem
           </a>
