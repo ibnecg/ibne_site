@@ -762,6 +762,13 @@ img {
   margin-top: -0.5rem;
 }
 
+.countdown-live {
+  color: var(--brand-forest);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+
 /* ==========================================================================
    Welcome / Feature Split Grid
    ========================================================================== */
@@ -943,11 +950,28 @@ img {
   border-radius: var(--radius-full);
 }
 
+.schedule-time-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
 .schedule-time {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 800;
   color: var(--brand-brown);
+  line-height: 1.1;
+}
+
+.schedule-time-alt {
+  font-family: var(--font-body);
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--brand-orange-dark);
+  margin-top: 0.25rem;
+  line-height: 1.2;
 }
 
 .schedule-title {
@@ -962,6 +986,26 @@ img {
   color: var(--text-muted);
   font-size: 0.925rem;
   flex-grow: 1;
+}
+
+.schedule-custom-note {
+  margin-top: 0.85rem;
+  padding: 0.7rem 0.85rem;
+  background: var(--brand-orange-subtle);
+  border: 1px solid rgba(237, 108, 5, 0.2);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.825rem;
+  color: var(--brand-charcoal);
+  line-height: 1.45;
+}
+
+.schedule-note-icon {
+  flex-shrink: 0;
+  color: var(--brand-orange);
+  margin-top: 0.15rem;
 }
 
 .schedule-card-footer {
@@ -1679,6 +1723,13 @@ img {
 .footer-schedule-desc {
   color: var(--text-light);
   font-size: 0.8rem;
+}
+
+.footer-schedule-note {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--brand-orange-light);
+  margin-top: 0.15rem;
 }
 
 .footer-church-name {

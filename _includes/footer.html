@@ -36,22 +36,17 @@
       <div class="footer-col">
         <h4>Cultos Semanais</h4>
         <ul class="footer-schedule-list">
-          <li class="footer-schedule-item">
-            <div class="footer-schedule-day">Domingo • 09:00</div>
-            <div class="footer-schedule-desc">Escola Bíblica Dominical</div>
-          </li>
-          <li class="footer-schedule-item">
-            <div class="footer-schedule-day">Domingo • 19:00</div>
-            <div class="footer-schedule-desc">Culto de Celebração da Família</div>
-          </li>
-          <li class="footer-schedule-item">
-            <div class="footer-schedule-day">Terça • 19:30</div>
-            <div class="footer-schedule-desc">Reunião de Oração</div>
-          </li>
-          <li class="footer-schedule-item">
-            <div class="footer-schedule-day">Sábado • 19:30</div>
-            <div class="footer-schedule-desc">Juventude Nova Esperança</div>
-          </li>
+          {% for service in site.data.schedule.services %}
+            <li class="footer-schedule-item">
+              <div class="footer-schedule-day">{{ service.day }} • {{ service.time }}</div>
+              <div class="footer-schedule-desc">
+                {{ service.title }}
+                {% if service.footer_note %}
+                  <span class="footer-schedule-note">({{ service.footer_note }})</span>
+                {% endif %}
+              </div>
+            </li>
+          {% endfor %}
         </ul>
       </div>
 
