@@ -1,9 +1,14 @@
 services:
   - day: "Domingo"
     time: "09:00"
-    title: "Escola Bíblica Dominical (EBD)"
-    description: "Crescimento espiritual, discipulado bíblico e classes para todas as idades (crianças, jovens e adultos)."
-    badge: "Ensino & Discipulado"
+    time_alt: "Encontro Online"
+    title: "Escola de Vida"
+    description: "Crescimento espiritual, discipulado e estudos bíblicos práticos para o dia a dia. Encontros todos os domingos às 09h da manhã de forma 100% online."
+    custom_note: "A Escola de Vida acontece online aos domingos às 09h! Entre no grupo oficial do WhatsApp para receber o link da aula e materiais."
+    badge: "Discipulado Online"
+    action_url: "https://chat.whatsapp.com/DYR7hzBmxQA7kkEmNEkBsK?mode=gi_t"
+    action_text: "Grupo do WhatsApp →"
+    footer_note: "Online"
     featured: false
     day_number: 0 # 0 = Domingo no JS
     hour: 9

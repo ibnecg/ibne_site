@@ -79,12 +79,12 @@ function initNextServiceCountdown() {
       const dayOfWeek = candidateDay.getDay();
 
       if (dayOfWeek === 0) { // Sunday
-        // 1. Escola Bíblica Dominical (EBD) - every Sunday at 09:00
+        // 1. Escola de Vida (Online) - every Sunday at 09:00
         candidates.push({
           day: 0,
           hour: 9,
           min: 0,
-          title: 'Escola Bíblica Dominical (EBD)',
+          title: 'Escola de Vida (Online)',
           isLastSundayWorship: false,
           targetDate: new Date(candidateDay.getFullYear(), candidateDay.getMonth(), candidateDay.getDate(), 9, 0, 0)
         });
