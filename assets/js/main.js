@@ -223,7 +223,7 @@ function initPixCopy() {
 
   copyButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      const pixKey = btn.getAttribute('data-pix') || 'contato@ibnecg.com.br';
+      const pixKey = btn.getAttribute('data-pix') || '07738221000100';
       
       navigator.clipboard.writeText(pixKey).then(() => {
         showToast('Chave PIX copiada com sucesso!');
