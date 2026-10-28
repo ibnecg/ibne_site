@@ -71,7 +71,7 @@ title: "Início"
           </li>
           <li>
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span><strong>Ministério Infantil Estruturado:</strong> Cuidado carinhoso e bíblico para seus filhos no <em>Esperança Kids</em>.</span>
+            <span><strong>Ministério Infantil Estruturado:</strong> Cuidado carinhoso e bíblico para seus filhos no <em>MINE - Ministério Infantil Nova Esperança</em>.</span>
           </li>
           <li>
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
@@ -122,8 +122,17 @@ title: "Início"
               <span>{{ service.custom_note }}</span>
             </div>
           {% endif %}
-          <div class="mt-sm">
+          <div class="schedule-card-footer">
             <span class="service-badge-pill">{{ service.badge }}</span>
+            {% if service.action_url %}
+              <a href="{{ service.action_url }}" target="_blank" rel="noopener" class="link-accent">
+                {{ service.action_text | default: "Mais Informações →" }}
+              </a>
+            {% else %}
+              <a href="{{ '/programacao' | relative_url }}" class="link-accent">
+                Detalhes →
+              </a>
+            {% endif %}
           </div>
         </div>
       {% endfor %}
@@ -151,7 +160,7 @@ title: "Início"
     <div class="ministries-grid">
       {% for min in site.data.ministries limit:3 %}
         <div class="ministry-card">
-          <div class="ministry-img-box">
+          <div class="ministry-img-box{% if min.image_contain %} contain-fit{% endif %}">
             <img src="{{ min.image | relative_url }}" alt="{{ min.name }}" />
             <span class="ministry-badge">{{ min.subtitle }}</span>
           </div>
@@ -264,7 +273,7 @@ title: "Início"
         <!-- Mapa embed interativo de Campo Grande/MS -->
         <iframe 
           title="Localização da Igreja Batista Nova Esperança" 
-          src="https://maps.google.com/maps?q=Campo%20Grande%20MS&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+          src="{{ site.church.maps_embed }}" 
           loading="lazy">
         </iframe>
       </div>

@@ -8,7 +8,7 @@ lead: "Cada ministério da IBNE existe para conectar pessoas a Deus, edificar re
 <div class="ministries-grid">
   {% for min in site.data.ministries %}
     <div class="ministry-card" id="{{ min.id }}">
-      <div class="ministry-img-box">
+      <div class="ministry-img-box{% if min.image_contain %} contain-fit{% endif %}">
         <img src="{{ min.image | relative_url }}" alt="{{ min.name }}" />
         <span class="ministry-badge">{{ min.subtitle }}</span>
       </div>

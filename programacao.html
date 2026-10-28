@@ -31,9 +31,15 @@ lead: "Confira todos os dias e horários dos nossos cultos e atividades em Campo
 
       <div class="schedule-card-footer">
         <span class="service-badge-pill">{{ service.badge }}</span>
-        <a href="{{ '/contato' | relative_url }}" class="link-accent">
-          Como Chegar →
-        </a>
+        {% if service.action_url %}
+          <a href="{{ service.action_url }}" target="_blank" rel="noopener" class="link-accent">
+            {{ service.action_text | default: "Mais Informações →" }}
+          </a>
+        {% else %}
+          <a href="{{ '/contato' | relative_url }}" class="link-accent">
+            Como Chegar →
+          </a>
+        {% endif %}
       </div>
     </div>
   {% endfor %}
@@ -51,7 +57,7 @@ lead: "Confira todos os dias e horários dos nossos cultos e atividades em Campo
     <div class="faq-card">
       <h4>⏰ Qual é o horário dos cultos de domingo?</h4>
       <p>
-        A Escola Bíblica Dominical (EBD) acontece todos os domingos às 09:00. Nosso <strong>Culto de Celebração da Família</strong> é realizado aos domingos às <strong>18:00</strong> — com exceção do <strong>último domingo do mês</strong>, quando celebramos em horário especial matutino às <strong>10:00</strong>.
+        A <strong>Escola de Vida</strong> acontece todos os domingos às <strong>09:00 de forma 100% online</strong> (<a href="https://chat.whatsapp.com/DYR7hzBmxQA7kkEmNEkBsK?mode=gi_t" target="_blank" rel="noopener" class="link-accent">acesse o grupo no WhatsApp</a> para receber o link e mais informações). Nosso <strong>Culto de Celebração da Família</strong> é presencial aos domingos às <strong>18:00</strong> — com exceção do <strong>último domingo do mês</strong>, quando celebramos em horário especial matutino às <strong>10:00</strong>.
       </p>
     </div>
 
@@ -65,7 +71,7 @@ lead: "Confira todos os dias e horários dos nossos cultos e atividades em Campo
     <div class="faq-card">
       <h4>👶 Tem espaço para meus filhos pequenos?</h4>
       <p>
-        Sim! Dispomos do <strong>Esperança Kids</strong> com salas climatizadas, berçário e professoras qualificadas durante os cultos de celebração de domingo para que seus filhos aprendam a Palavra de forma alegre e segura.
+        Sim! Dispomos do <strong>MINE (Ministério Infantil Nova Esperança)</strong> com salas climatizadas, berçário e professoras qualificadas durante os cultos de celebração de domingo para que seus filhos aprendam a Palavra de forma alegre e segura.
       </p>
     </div>
 

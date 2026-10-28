@@ -1,8 +1,9 @@
-- id: "esperanca-kids"
-  name: "Esperança Kids"
+- id: "mine-infantil"
+  name: "MINE - Ministério Infantil Nova Esperança"
   subtitle: "Crianças de 0 a 11 anos"
   icon: "sparkles"
-  image: "/assets/images/kids.jpg"
+  image: "/assets/images/logo-mine.png"
+  image_contain: true
   description: "Ambiente seguro, alegre e estruturado onde as crianças aprendem os princípios bíblicos através de histórias, dinâmicas e amor pastoral."
   verse: "Ensina a criança no caminho em que deve andar, e até quando envelhecer não se desviará dele. — Provérbios 22:6"
   leader: "Coordenação Pedagógica e Voluntários"
