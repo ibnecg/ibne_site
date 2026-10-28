@@ -18,9 +18,10 @@ church:
   phone: "(67) 99999-9999"
   whatsapp: "5567999999999"
   email: "contato@ibnecg.com.br"
-  pix_key: "contato@ibnecg.com.br"
+  pix_key: "07738221000100"
+  pix_key_formatted: "07.738.221/0001-00"
   pix_name: "Igreja Batista Nova Esperança"
-  pix_bank: "Banco do Brasil"
+  pix_bank: "Santander"
   social:
     instagram: "https://instagram.com/ibnecg"
     youtube: "https://youtube.com/@ibnecg"
