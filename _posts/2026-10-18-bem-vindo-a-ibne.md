@@ -21,7 +21,7 @@ Em um mundo marcado por incertezas e correria, cremos firmemente que a igreja de
 
 Seja você um membro de longa data ou alguém que está pesquisando sobre a igreja pela primeira vez, nosso convite é para que você venha participar de um dos nossos cultos semanais:
 
-- **Domingos às 09:00:** Escola Bíblica Dominical (EBD)
+- **Domingos às 09:00:** Escola de Vida (Online — [Mais Informações no WhatsApp](https://chat.whatsapp.com/DYR7hzBmxQA7kkEmNEkBsK?mode=gi_t))
 - **Domingos às 18:00:** Culto de Celebração da Família *(no último domingo do mês, o culto é às 10:00)*
 - **Terças-feiras às 19:30:** Reunião de Oração e Intercessão
 - **Quintas-feiras às 19:30:** Estudo Bíblico & Pequenos Grupos

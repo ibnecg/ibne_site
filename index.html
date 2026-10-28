@@ -122,8 +122,17 @@ title: "Início"
               <span>{{ service.custom_note }}</span>
             </div>
           {% endif %}
-          <div class="mt-sm">
+          <div class="schedule-card-footer">
             <span class="service-badge-pill">{{ service.badge }}</span>
+            {% if service.action_url %}
+              <a href="{{ service.action_url }}" target="_blank" rel="noopener" class="link-accent">
+                {{ service.action_text | default: "Mais Informações →" }}
+              </a>
+            {% else %}
+              <a href="{{ '/programacao' | relative_url }}" class="link-accent">
+                Detalhes →
+              </a>
+            {% endif %}
           </div>
         </div>
       {% endfor %}
